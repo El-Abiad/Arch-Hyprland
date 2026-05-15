@@ -1,0 +1,20 @@
+format = "$directory$git_branch$git_status$line_break$character"
+
+[directory]
+style = "bold blue"
+truncation_length = 10
+truncate_to_repo = true
+
+[git_branch]
+format = " on [$branch](bold mauve)"
+symbol = " "
+
+[git_status]
+disabled = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[line_break]
+disabled = false

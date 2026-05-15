@@ -1,0 +1,79 @@
+{
+    "height": 28, 
+    "spacing": 8, 
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "output": ["eDP-1"],
+    "modules-right": ["hyprland/language","pulseaudio", "network", "battery"],
+    // Modules configuration
+    "clock": {
+        "format": "{:%I:%M %p - %a %d %b %G}",
+	"tooltip": false
+    },
+    "network": {
+        "format-wifi": "{icon}  {essid}",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-linked": "{ifname} NO IP",
+        "format-disconnected": "DISCONNECTED",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+	"tooltip": false
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+       "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon} {volume}% ",
+        "format-bluetooth-muted": "MUTE ",
+        "format-muted": "󰝟 MUTE",
+        "format-source": "",
+        "tooltip-format": "Playing at {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+              "default": ["󰕿", "󰖀", "󰕾", "󰕾"]
+        }
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": "{icon} {capcity}%",     
+        "interval": 1,   
+        "format-icons": ["", "", "", "",""],
+        "tooltip-format-discharging": "Remaining: {time}",
+        "tooltip-format-charging": "To Full: {time}"
+    },
+    "hyprland/workspaces": {
+	"on-click": "activate",
+        "format": "{icon}",
+    	"format-icons": {
+           	"default": "/",
+     	   	"1": "1",
+     	   	"2": "2",
+     	   	"3": "3",
+     	   	"4": "4",
+     	   	"5": "5",
+     	   	"6": "6",
+      	   	"7": "7",
+      	  	"8": "8",
+      		"active": "-"
+   	 },
+   	 "persistent-workspaces": {
+     		 "1": [],
+     		 "2": [],
+     		 "3": [],
+     		 "4": [],
+     		 "5": []
+    	}
+    },
+    "hyprland/language":{
+    	"format": "{}",
+	"format-en": "EN",
+   	"format-ar": "AR",
+    	"format-es": "ES",
+	"short-description": true	
+    }
+}
+
