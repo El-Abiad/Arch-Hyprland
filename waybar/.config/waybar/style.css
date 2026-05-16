@@ -1,12 +1,10 @@
 * {
-    font-family: CaskaydiaMono Nerd Font;
+    font-family: Arial;
     font-size: 18px;
-    padding: 2px;
-    margin: 0;
 }
 
 window#waybar {
-    background-color: #0F0F0F;
+    background: transparent;
     color: #FFF;
 }
 
@@ -23,9 +21,23 @@ window#waybar {
 #battery,
 #network,
 #pulseaudio,
+#clock,
+#workspaces,
 #language {
+    background-color: #0F0F0F;
+    border-radius: 999px;
     color: #FFF;
-    padding: 0 6px;
+    padding: 4 12px;
+    margin-bottom: 5px;
+    margin-top: 14px;
+}
+
+.modules-left{
+    margin-left: 20px;
+}
+
+.modules-right{
+    margin-right: 20px;
 }
 
 #battery.warning { color: #e5a84d; }

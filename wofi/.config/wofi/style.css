@@ -1,8 +1,5 @@
 window {
-    background-color: #0F0F0F;
-    border: 1px solid #FFF;
-    border-radius: 8px;
-    font-family: monospace;
+    background-color: transparent;
 }
 
 #input {
@@ -13,8 +10,6 @@ window {
     padding: 8px 12px;
     margin: 8px;
     font-size: 14px;
-    outline: none;
-    caret-color: #FFF;
 }
 
 #input:focus {
@@ -24,11 +19,15 @@ window {
 
 #inner-box {
     background-color: transparent;
+    border-radius: 10px;
 }
 
 #outer-box {
     background-color: #0F0F0F;
+    opacity: 0.8;
     padding: 4px;
+    border: 2px solid #FFF;
+    border-radius: 10px;
 }
 
 #entry {

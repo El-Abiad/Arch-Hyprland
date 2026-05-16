@@ -1,11 +1,10 @@
 {
-    "height": 28, 
+    "height": 10, 
     "spacing": 8, 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "output": ["eDP-1"],
     "modules-right": ["hyprland/language","pulseaudio", "network", "battery"],
-    // Modules configuration
     "clock": {
         "format": "{:%I:%M %p - %a %d %b %G}",
 	"tooltip": false
@@ -19,8 +18,7 @@
 	"tooltip": false
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-       "format": "{icon}  {volume}%",
+        "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}% ",
         "format-bluetooth-muted": "MUTE ",
         "format-muted": "󰝟 MUTE",
