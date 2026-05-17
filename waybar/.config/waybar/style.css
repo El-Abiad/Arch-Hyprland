@@ -39,7 +39,3 @@ window#waybar {
 .modules-right{
     margin-right: 20px;
 }
-
-#battery.warning { color: #e5a84d; }
-#battery.critical { color: #e5534b; }
-#battery.charging { color: #57ab5a; }
